@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Hmydou | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+
+</head>
+
+<body>
+  <div class="site-bg"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+        <span class="brand-dot"></span>
+        <span>Mohammed.dev</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#profiel">Profiel</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projecten">Projecten</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section d-flex align-items-center justify-content-center text-center" id="home">
+    <div class="container position-relative">
+      <div class="hero-content">
+        <h1 class="hero-name">Mohammed Hmydou</h1>
+        <p class="hero-tagline">Software Development Student</p>
+        <p class="hero-subtitle">Op zoek naar een stageplek</p>
+
+        <div class="hero-actions mt-5">
+          <a href="#" class="btn btn-gradient btn-lg px-5 py-3 me-3">Download CV</a>
+          <a href="#profiel" class="btn btn-outline-light btn-lg px-5 py-3">Over mij</a>
+        </div>
+
+        <div class="internship-badge mt-4">
+          <span class="badge-dot"></span> Open voor stagekansen
+        </div>
+
+        <div class="scroll-hint mt-5">
+          Scroll Down <span>↓</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="profiel" class="page-hero section-space">
+    <div class="container pt-5">
+      <div class="section-title text-center reveal">
+        <span class="eyebrow">Profiel</span>
+        <h1>Over mij als developer</h1>
+        <p>Ik ben een gemotiveerde student software development met veel interesse in webdesign, front-end en het bouwen
+          van gebruiksvriendelijke websites.</p>
+      </div>
+
+      <div class="row g-4 mt-4 align-items-center">
+        <div class="col-lg-5 reveal">
+          <div class="glass-card p-3 profile-image-card text-center">
+            <img src="assets/img/foto.png" alt="Portfolio visual" class="img-fluid rounded-4 portfolio-image">
+          </div>
+        </div>
+        <div class="col-lg-7 reveal delay-1">
+          <div class="glass-card p-4 p-lg-5 h-100">
+            <h2>Mohammed Hmydou</h2>
+            <p class="text-light-emphasis mt-3">
+              Ik ben een student Software Developer aan ROC Mondriaan in Den Haag, gedreven door een passie voor
+              technologie en het oplossen van problemen. Van het maken van interactieve webapplicaties tot het
+              ontwikkelen van mobile applications, ik vind het leuk om ideeën om te zetten in werkelijkheid met code.
+            <p>Met ervaring in webontwikkeling (HTML, CSS, JavaScript, TypeScript, React, Next.js, Prisma, PHP, MySQL)
+              en mobile application development heb ik meerdere projecten afgerond die zowel mijn technische
+              vaardigheden als mijn creativiteit laten zien.</p>
+
+
+            <p>Mijn doel is om een sterke software developer te worden die betekenisvolle digitale ervaringen creëert.
+              Momenteel ben ik op zoek naar een stageplek waar ik mijn vaardigheden kan toepassen in een professionele
+              omgeving en mezelf verder kan ontwikkelen als developer.</p>
+            </p>
+            <div class="info-grid mt-4">
+              <div class="info-box">
+                <span>Studie</span>
+                <strong>Software Development</strong>
+              </div>
+              <div class="info-box">
+                <span>Niveau</span>
+                <strong>MBO 4</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <main id="projecten" class="section-space page-hero">
+    <div class="container pt-5">
+      <div class="section-title text-center reveal">
+        <span class="eyebrow">Projecten</span>
+        <h1>Mijn werk en concepten</h1>
+        <p>Ik laat hier zowel gebouwde projecten als sterke concepten zien die passen bij mijn groei als developer.</p>
+      </div>
+
+      <div class="filter-row reveal mt-4">
+        <button class="filter-btn active" data-filter="all">Alles</button>
+        <button class="filter-btn" data-filter="frontend">Front-end</button>
+        <button class="filter-btn" data-filter="fullstack">Full-stack</button>
+        <button class="filter-btn" data-filter="concept">Concept</button>
+      </div>
+
+      <div class="row g-4 mt-2 project-grid">
+        <div class="col-lg-4 col-md-6 project-item" data-category="frontend">
+          <div class="glass-card project-card h-100" data-project-title="Hoger Lager"
+            data-level="Schoolproject — Afgerond Periode 1 — Eerste Project 2024"
+            data-intro="Een klassieke “hoger-lager” dobbelsteen game. Spelers raden of de volgende worp hoger of lager zal zijn dan de huidige. Dit was mijn allereerste programmeerproject, volledig vanaf nul gebouwd met HTML, CSS en JavaScript. Het leerde me de basis van programmeren, DOM-manipulatie en event handling."
+            data-learned="Ik kreeg mijn eerste ervaring met programmeren. Ik leerde logisch nadenken, problemen opdelen in kleinere stappen en JavaScript gebruiken om een webpagina interactief te maken. Dit project markeerde het begin van mijn ontwikkelreis."
+            data-features="<ul><li>Willekeurige dobbelsteenworp</li><li>Score bijhouden</li><li>Win/verlies detectie</li><li>Schone UI met animaties</li><li>Responsief ontwerp</li></ul>"
+            data-tech="<span class='tech-chip'>HTML</span><span class='tech-chip'>CSS</span><span class='tech-chip'>JavaScript</span>"
+            data-team="Team: Individueel ~8 weken">
+            <div class="project-image" style="--pattern: 'game';"><i class='bx bx-dice-1 project-image-icon'></i></div>
+            <div class="p-4">
+              <h3>Hoger Lager Game</h3>
+              <p>Een interactief spel waarbij de speler sneller leert werken met logica, UI en scoreverwerking.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-item" data-category="frontend">
+          <div class="glass-card project-card h-100" data-project-title="Boter, Kaas en Eieren"
+            data-level="Schoolproject — Afgerond Periode 2 — Webontwikkeling 2026"
+            data-intro="Een klassieke boter-kaas-en-eieren game voor het web, gebouwd met HTML, CSS en JavaScript. Spelers kunnen om de beurt X of O zetten op een 3x3 rooster. Het spel controleert automatisch op winnaars of een gelijkspel. Dit project richtte zich op DOM-manipulatie, spel-logica en responsief ontwerp."
+            data-learned="Ik heb mijn vaardigheden in HTML, CSS en JavaScript verbeterd. Ik leerde hoe ik dynamisch de DOM kan manipuleren, spel-logica kan implementeren en een interactieve, responsieve webinterface kan maken."
+            data-features="<ul><li>Twee-speler gameplay</li><li>Automatische winnaar-detectie en melding van gelijkspel</li><li>Interactieve interface met HTML, CSS en JavaScript</li><li>Responsief ontwerp voor verschillende schermgroottes</li></ul>"
+            data-tech="<span class='tech-chip'>HTML</span><span class='tech-chip'>CSS</span><span class='tech-chip'>JavaScript</span>"
+            data-team="Team: Individueel project ~7 weken">
+            <div class="project-image" style="--pattern: 'tic-tac-toe';"><i
+                class='bx bx-grid-alt project-image-icon'></i></div>
+            <div class="p-4">
+              <h3>Boter Kaas en Eieren</h3>
+              <p>Een klassiek spel dat ik heb gebruikt om game logica, klikacties en weergave van status te oefenen.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-item" data-category="frontend">
+          <div class="glass-card project-card h-100" data-project-title="Review Your Experience — Oyun Gaming"
+            data-level="Schoolproject — Afgerond Periode 3 — Full-Stack Ontwikkeling 2025"
+            data-intro="Een full-stack gamecatalogus en reviewplatform genaamd “Oyun”. Gebruikers kunnen een catalogus van games bekijken, reviews schrijven en hun ervaringen beoordelen. Het project bevat een volledige PHP-backend met MySQL-database, master- en detailpagina’s voor gebruikers en een responsive frontend met Bootstrap."
+            data-learned="Mijn eerste kennismaking met backend-ontwikkeling. Ik leerde PHP koppelen aan een MySQL-database, dynamische pagina’s maken met GET-parameters en een volledige CRUD-applicatie bouwen. Dit project liet zien hoe frontend en backend samenwerken."
+            data-features="<ul><li>Gamecatalogus met zoek- en filterfunctie</li><li>Gebruikersreview- en ratingsysteem</li><li>Master- en detailpagina’s via GET-requests</li><li>MySQL-database met relaties</li><li>Responsieve UI met Bootstrap</li><li>CRUD-functionaliteit voor reviews</li></ul>"
+            data-tech="<span class='tech-chip'>HTML</span><span class='tech-chip'>CSS</span><span class='tech-chip'>JavaScript</span><span class='tech-chip'>PHP</span><span class='tech-chip'>MySQL</span><span class='tech-chip'>Bootstrap</span>"
+            data-team="Team: 2 personen ~10 weken">
+            <div class="project-image" style="--pattern: 'review';"><i class='bx bx-star project-image-icon'></i></div>
+            <div class="p-4">
+              <h3>Review Your Experience</h3>
+              <p>Een reflectieproject met focus op presentatie, informatieverdeling en visuele structuur.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-item" data-category="fullstack">
+          <div class="glass-card project-card h-100" data-project-title="Budget Buddy"
+            data-level="Schoolproject — Afgerond Periode 5 — Gevorderde Webontwikkeling 2026"
+            data-intro="Een webapplicatie die gebruikers helpt hun persoonlijke financiën bij te houden en beheren. Gebruikers kunnen inkomsten en uitgaven toevoegen, bewerken en verwijderen, transacties categoriseren en een overzicht van hun budget krijgen. Het project is gebouwd met Symfony en een MySQL-database, en de front-end is gestyled met HTML, CSS en JavaScript."
+            data-learned="Ik heb geleerd hoe ik een Symfony-project structureer, een MySQL-database ontwerp en CRUD-functionaliteiten implementeer. Ook heb ik ervaring opgedaan met gebruikersauthenticatie en het bouwen van een gebruiksvriendelijke en responsieve webapplicatie."
+            data-features="<ul><li>Inkomsten en uitgaven toevoegen, bewerken en verwijderen</li><li>Categorieën en overzicht van transacties</li><li>Gebruikersauthenticatie via Symfony</li><li>Volledige CRUD-functionaliteit</li><li>Responsief ontwerp met HTML, CSS en JavaScript</li></ul>"
+            data-tech="<span class='tech-chip'>Symfony</span><span class='tech-chip'>HTML</span><span class='tech-chip'>CSS</span><span class='tech-chip'>JavaScript</span><span class='tech-chip'>MySQL</span>"
+            data-team="Team: 3 personen ~8 weken">
+            <div class="project-image" style="--pattern: 'budget';"><i
+                class='bx bx-dollar-circle project-image-icon'></i></div>
+            <div class="p-4">
+              <h3>Budget Buddy</h3>
+              <p>Een financieel dashboard concept waarin gebruikers inkomsten, uitgaven en overzichten kunnen beheren.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-item" data-category="fullstack">
+          <div class="glass-card project-card h-100" data-project-title="SDG Dashboard"
+            data-level="Schoolproject — Afgerond Periode 6 — Gevorderde Webontwikkeling 2026"
+            data-intro="Een interactieve full-stack webapplicatie om de Sustainable Development Goals (SDG's) van de Verenigde Naties bij te houden en te visualiseren. De app bevat geavanceerde datavisualisaties met Chart.js, gebruikersauthenticatie via NextAuth, volledige CRUD-functionaliteit en een moderne, schone UI."
+            data-learned="Dit project was een grote stap vooruit. Ik leerde moderne webontwikkeling met Next.js, React en TypeScript. Werken met Prisma ORM gaf inzicht in professioneel databasebeheer. Ook deed ik ervaring op met authenticatiesystemen, API-design en het bouwen van een productieklare applicatie."
+            data-features="<ul><li>Interactieve datavisualisaties met Chart.js</li><li>Gebruikersauthenticatie via NextAuth</li><li>Prisma ORM met MySQL-database</li><li>Volledige CRUD-functionaliteit</li><li>Server-side rendering met Next.js</li><li>Formulier-validatie met Zod</li><li>Responsief ontwerp met Tailwind CSS</li><li>Type-safe codebase met TypeScript</li></ul>"
+            data-tech="<span class='tech-chip'>Next.js</span><span class='tech-chip'>React</span><span class='tech-chip'>TypeScript</span><span class='tech-chip'>Tailwind CSS</span><span class='tech-chip'>Prisma</span><span class='tech-chip'>MySQL</span>"
+            data-team="Team: 2 personen ~10 weken">
+            <div class="project-image" style="--pattern: 'sdg';"><i
+                class='bx bx-bar-chart-alt-2 project-image-icon'></i></div>
+            <div class="p-4">
+              <h3>SDG Dashboard</h3>
+              <p>Een dashboard met statistieken, filters en kaarten om data duidelijk en visueel te presenteren.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-item" data-category="concept">
+          <div class="glass-card project-card h-100" data-project-title="ChessMaster"
+            data-level="Schoolproject — In uitvoering Periode 7 — Huidig Project 2026"
+            data-intro="Een nieuw project in actieve ontwikkeling met het Next.js framework. Ik bouw voort op alles wat ik tot nu toe geleerd heb om iets ambitieus te creëren. Meer details volgen naarmate het project vordert."
+            data-learned="Momenteel in uitvoering — ik leer elke dag nieuwe dingen terwijl het project groeit."
+            data-features="<ul><li>Gebouwd met Next.js</li><li>Meer functies volgen binnenkort</li></ul>"
+            data-tech="<span class='tech-chip'>Next.js</span><span class='tech-chip'>TBD</span>"
+            data-team="Team: Ongoing">
+            <div class="project-image" style="--pattern: 'chess';"><i class='bx bxs-chess project-image-icon'></i></div>
+            <div class="p-4">
+              <h3>chessMaster dat binnen kort komt</h3>
+              <p>Een platform om beter te worden in schaken door het oefenen van openingen, tactieken en strategieën.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+ <main id="skills" class="section-space page-hero">
+  <div class="container pt-5">
+    <div class="section-title text-center reveal">
+      <span class="eyebrow">Skills</span>
+      <h1>Technische en persoonlijke skills</h1>
+      <p>Mijn basis is sterk in front-end, terwijl ik tegelijk verder groei richting modern full-stack development.
+      </p>
+    </div>
+
+    <div class="row g-4 mt-3">
+      <div class="col-12 reveal">
+        <div class="skills-container">
+          <!-- Frontend Section -->
+          <div class="skills-section">
+            <h4 class="skills-section-title">
+              <i class='bx bxl-palette'></i> Frontend
+            </h4>
+
+            <div class="row g-3">
+              <!-- Skill HTML -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="HTML5" data-skill-level="Gemiddeld / Gevorderd"
+                  data-description="Een van de eerste talen die ik op school leerde. HTML5 gaf me een solide basis in het begrijpen van webstructuur en logica, en leidde tot meerdere projecten vanaf nul.">
+                  <i class='bx bxl-html5'></i>
+                  <h5>HTML5</h5>
+                </div>
+              </div>
+
+              <!-- Skill CSS -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="CSS3" data-skill-level="Gemiddeld / Gevorderd"
+                  data-description="Leerde naast HTML. CSS vormt de basis voor al mijn webdesign werk. Ik gebruik CSS om responsieve layouts, animaties en visueel aantrekkelijke interfaces te maken.">
+                  <i class='bx bxl-css3'></i>
+                  <h5>CSS3</h5>
+                </div>
+              </div>
+
+              <!-- Skill JavaScript -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="JavaScript" data-skill-level="Beginner / Gemiddeld"
+                  data-description="Mijn eerste scripttaal, gebruikt in meerdere schoolprojecten. JavaScript bracht mijn webpagina’s tot leven met interactie en dynamische functionaliteit.">
+                  <i class='bx bxl-javascript'></i>
+                  <h5>JavaScript</h5>
+                </div>
+              </div>
+
+              <!-- Skill TypeScript -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="TypeScript" data-skill-level="Beginner"
+                  data-description="Begonnen met leren dit schooljaar via het Next.js framework. TypeScript voegt typeveiligheid toe aan JavaScript, waardoor fouten eerder worden ontdekt en code beter onderhoudbaar is.">
+                  <i class='bx bxl-typescript'></i>
+                  <h5>TypeScript</h5>
+                </div>
+              </div>
+
+              <!-- Skill React / Next.js -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="React / Next.js" data-skill-level="Beginner"
+                  data-description="Geleerd via het Next.js framework op school. Next.js biedt meer structuur en houdt projecten georganiseerd en overzichtelijk. Ik ben nog steeds bezig met leren en groeien in deze technologie.">
+                  <i class='bx bxl-react'></i>
+                  <h5>React / Next.js</h5>
+                </div>
+              </div>
+
+              <!-- Skill Tailwind CSS -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="Tailwind CSS" data-skill-level="Beginner"
+                  data-description="Gebruikt in mijn Next.js-projecten voor utility-first styling. Tailwind maakt het snel bouwen van responsieve, consistente interfaces mogelijk zonder overal custom CSS te schrijven.">
+                  <i class='bx bxl-tailwind-css'></i>
+                  <h5>Tailwind CSS</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend & Database Section -->
+          <div class="skills-section">
+            <h4 class="skills-section-title">
+              <i class='bx bx-server'></i> Backend & Database
+            </h4>
+
+            <div class="row g-3">
+              <!-- Skill PHP -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="PHP" data-skill-level="Gemiddeld (iets roestig)"
+                  data-description="De eerste backend-taal die ik op school leerde. Ik gebruikte PHP om MySQL-databases te koppelen en master- en detailpagina’s te maken via GET-requests. Een beetje roestig omdat ik het sinds vorig jaar niet meer heb gebruikt.">
+                  <i class='bx bxl-php'></i>
+                  <h5>PHP</h5>
+                </div>
+              </div>
+
+              <!-- Skill MySQL -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="MySQL" data-skill-level="Gemiddeld"
+                  data-description="Databasebeheer gebruikt in meerdere projecten. Verbonden via PHP in eerdere projecten en via Prisma ORM in recentere Next.js-projecten.">
+                  <i class='devicon-mysql-plain'></i>
+                  <h5>MySQL</h5>
+                </div>
+              </div>
+
+              <!-- Skill Prisma ORM -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="Prisma ORM" data-skill-level="Beginner"
+                  data-description="Gebruikt in het SDG Dashboard-project met Next.js. Prisma biedt een schone, type-veilige manier om met databases te werken, waardoor queries eenvoudiger te schrijven en te onderhouden zijn.">
+                  <i class='devicon-prisma-original'></i>
+                  <h5>Prisma ORM</h5>
+                </div>
+              </div>
+
+              <!-- Skill Java -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="Java" data-skill-level="Beginner"
+                  data-description="Een van mijn favoriete talen om in te programmeren. Ik schreef mijn persoonlijke Minecraft-mod (BetterLeaderboards-MC) in Java. Het is mijn favoriete taal voor structuur en betrouwbaarheid.">
+                  <i class='bx bxl-java'></i>
+                  <h5>Java</h5>
+                </div>
+              </div>
+
+              <!-- Skill Symfony -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="Symfony" data-skill-level="Beginner"
+                  data-description="Een PHP-framework dat ik recent ben begonnen te leren. Symfony biedt een gestructureerde manier om webapplicaties te bouwen met herbruikbare componenten en ingebouwde best practices.">
+                  <i class='devicon-symfony-original'></i>
+                  <h5>Symfony</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Methods Section -->
+          <div class="skills-section">
+            <h4 class="skills-section-title">
+              <i class='bx bx-wrench'></i> Tools & Methoden
+            </h4>
+
+            <div class="row g-3">
+              <!-- Skill Git / GitHub -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="Git / GitHub" data-skill-level="Gemiddeld"
+                  data-description="Versiebeheer gebruikt in al mijn projecten. Ik gebruik Git om veranderingen bij te houden, te branch-en en samen te werken met klasgenoten. GitHub is waar ik mijn code host en deel.">
+                  <i class='bx bxl-github'></i>
+                  <h5>Git / GitHub</h5>
+                </div>
+              </div>
+
+              <!-- Skill Agile / Scrum -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="Scrum" data-skill-level="Gemiddeld / Ervaren"
+                  data-description="Projectmethodiek gebruikt op school. We werken in sprints, doen stand-ups en gebruiken scrum boards om taken te organiseren en voortgang bij te houden.">
+                  <i class='bx bx-group'></i>
+                  <h5>Scrum</h5>
+                </div>
+              </div>
+
+              <!-- Skill Linux -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="Linux" data-skill-level="Beginner / Gemiddeld"
+                  data-description="Ervaring met Linux-besturingssystemen, terminal-commando’s en serverbeheer. Comfortabel werken in een command-line omgeving.">
+                  <i class='devicon-linux-plain'></i>
+                  <h5>Linux</h5>
+                </div>
+              </div>
+
+              <!-- Skill AI / Prompt Engineering -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="AI / Prompt Engineering" data-skill-level="Gemiddeld"
+                  data-description="Ervaren in het effectief gebruiken van AI-tools voor programmeerhulp, probleemoplossing en productiviteit. Begrijp hoe duidelijke prompts te schrijven voor de beste resultaten.">
+                  <i class='bx bxs-brain'></i>
+                  <h5>AI / Prompt Engineering</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <main id="contact" class="section-space page-hero">
+    <div class="container pt-5">
+      <div class="section-title text-center reveal">
+        <span class="eyebrow">Contact</span>
+        <h1>Laten we contact opnemen</h1>
+        <p>Voor vragen, samenwerking of stage-interesse kun je mij bereiken via onderstaande gegevens.</p>
+      </div>
+
+      <div class="row g-4 mt-3">
+        <div class="col-12 col-lg-8 mx-auto reveal">
+          <div class="glass-card p-4 p-lg-5 h-100">
+            <span class="small-tag">Beschikbaar voor contact</span>
+            <h2 class="mt-3">Contactgegevens</h2>
+            <div class="contact-list mt-4">
+
+              <div class="contact-item">
+                <span>E-mail</span>
+                <a href="mailto:302352550@student.rocmondriaan.nl">302352550@student.rocmondriaan.nl</a>
+              </div>
+              <div class="contact-item">
+                <span>Telefoon</span>
+                <a href="tel:+31612345678">+31 6 16760580</a>
+              </div>
+              <div class="contact-item">
+                <span>Adres</span>
+                <p class="mb-0">Den haag, Nederland</p>
+              </div>
+              <div class="contact-item">
+                <span>Status</span>
+                <p class="mb-0">Student software development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-3 align-items-center">
+      © 2024 Mohammed Hmydou - Portfolio
+      <div class="footer-links d-flex gap-3">
+        <a href="#home">Home</a>
+        <a href="#projecten">Projecten</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Skill Modal -->
+  <div class="skill-modal" id="skillModal">
+    <div class="skill-modal-overlay" id="skillModalOverlay"></div>
+    <div class="skill-modal-content">
+      <button class="skill-modal-close" id="skillModalClose">×</button>
+      <div class="skill-modal-header">
+        <div class="skill-modal-icon" id="skillModalIcon"></div>
+        <div class="skill-modal-title-section">
+          <h2 id="skillModalName"></h2>
+          <span class="skill-modal-level" id="skillModalLevel"></span>
+        </div>
+      </div>
+      <p class="skill-modal-description" id="skillModalDescription"></p>
+    </div>
+  </div>
+
+  <!-- Project Modal -->
+  <div class="project-modal" id="projectModal">
+    <div class="project-modal-overlay" id="projectModalOverlay"></div>
+    <div class="project-modal-content">
+      <button class="project-modal-close" id="projectModalClose">×</button>
+      <div class="project-modal-header">
+        <div class="project-modal-icon" id="projectModalIcon"></div>
+        <div class="project-modal-title-section">
+          <h2 id="projectModalTitle"></h2>
+          <span class="project-modal-level" id="projectModalLevel"></span>
+        </div>
+      </div>
+      <div class="project-modal-body">
+        <p class="project-intro" id="projectModalIntro"></p>
+        <h4>Belangrijkste kenmerken</h4>
+        <ul class="project-features" id="projectModalFeatures"></ul>
+        <h4>Wat ik heb geleerd</h4>
+        <p class="project-learned" id="projectModalLearned"></p>
+        <h4>Tech Stack</h4>
+        <div class="project-tech-stack" id="projectModalTech"></div>
+        <h4>Team</h4>
+        <p class="project-team" id="projectModalTeam"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
