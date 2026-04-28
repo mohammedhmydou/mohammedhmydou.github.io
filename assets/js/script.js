@@ -61,13 +61,18 @@ document.addEventListener('DOMContentLoaded', () => {
   skillCards.forEach(card => {
     card.addEventListener('click', () => {
       const skillName = card.getAttribute('data-skill-name');
-      const skillLevel = card.getAttribute('data-skill-level') || card.getAttribute('data-skill-level');
+      const skillLevel = card.getAttribute('data-skill-level');
       const description = card.getAttribute('data-description');
       const iconHTML = getIconHTML(card);
 
       skillModalIcon.innerHTML = iconHTML;
       skillModalName.textContent = skillName;
-      skillModalLevel.textContent = skillLevel;
+      if (skillLevel) {
+        skillModalLevel.textContent = skillLevel;
+        skillModalLevel.style.display = 'block';
+      } else {
+        skillModalLevel.style.display = 'none';
+      }
       skillModalDescription.textContent = description;
 
       skillModal.classList.add('active');
@@ -77,6 +82,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Open project modal
   projectCards.forEach(card => {
+    // Prevent link button clicks from opening modal
+    const linkBtn = card.querySelector('.project-link-btn');
+    if (linkBtn) {
+      linkBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
+    }
+
     card.addEventListener('click', () => {
       const title = card.getAttribute('data-project-title');
       const level = card.getAttribute('data-level');
@@ -167,6 +180,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const href = link.getAttribute('href');
       const target = document.querySelector(href);
       if (target) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
         target.scrollIntoView({ behavior: 'smooth' });
       }
     });

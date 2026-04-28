@@ -50,16 +50,39 @@ h1, h2, h3, h4 { line-height: 1.15; }
 }
 
 .nav-link {
-  color: rgba(255,255,255,0.72);
+  color: rgba(255,255,255,0.72) !important;
   position: relative;
   padding: .7rem 1rem !important;
   border-radius: 999px;
-  transition: .25s ease;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
-.nav-link:hover,
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(109, 168, 255, 0.2), rgba(125, 92, 255, 0.2));
+  border-radius: 999px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
 .nav-link.active {
-  color: #fff;
-  background: rgba(255,255,255,0.08);
+  color: #fff !important;
+  background: rgba(109, 168, 255, 0.25) !important;
+  box-shadow: 0 8px 20px rgba(109, 168, 255, 0.3);
+  font-weight: 600;
 }
 
 /* Hero */
@@ -299,10 +322,30 @@ h1, h2, h3, h4 { line-height: 1.15; }
 
 .project-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 .project-card:hover {
   transform: translateY(-8px);
 }
+
+.project-link-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.project-link-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(109, 168, 255, 0.4);
+}
+
 .project-image, .project-placeholder {
   height: 200px;
   border-radius: 20px 20px 0 0;
