@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
+
   // Skill Modal functionality
   const skillCards = document.querySelectorAll('.skill-card');
   const skillModal = document.getElementById('skillModal');
